@@ -7,20 +7,20 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mycontactapp.databinding.ContactRowBinding
 
-class ContactAdapter(val callback: (Contacts) -> Unit): ListAdapter<Contacts, ContactAdapter.ContactViewHolder>(ContactDiffUtil()) {
+class ContactAdapter(val callback: (Contact) -> Unit): ListAdapter<Contact, ContactAdapter.ContactViewHolder>(ContactDiffUtil()) {
 
     class ContactViewHolder(val binding: ContactRowBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(contact: Contacts){
+        fun bind(contact: Contact){
             binding.contact = contact
         }
     }
 
-    class ContactDiffUtil: DiffUtil.ItemCallback<Contacts>(){
-        override fun areItemsTheSame(oldItem: Contacts, newItem: Contacts): Boolean {
-            return oldItem.name == newItem.name
+    class ContactDiffUtil: DiffUtil.ItemCallback<Contact>(){
+        override fun areItemsTheSame(oldItem: Contact, newItem: Contact): Boolean {
+            return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: Contacts, newItem: Contacts): Boolean {
+        override fun areContentsTheSame(oldItem: Contact, newItem: Contact): Boolean {
             return oldItem == newItem
         }
 

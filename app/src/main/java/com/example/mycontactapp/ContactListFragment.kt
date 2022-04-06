@@ -20,16 +20,16 @@ class ContactListFragment : Fragment() {
         binding = FragmentContactListBinding.inflate(inflater, container, false)
         val adapter = ContactAdapter{
             val bundle = Bundle().apply {
-                putString("phone_value",it.phone)
-                putString("email_value",it.email)
-                putString("address_value",it.address)
+                putString("phone",it.phone)
+                putString("email",it.email)
+                putString("address",it.address)
             }
             findNavController().navigate(R.id.action_contactListFragment_to_contactDetailFragment,bundle)
         }
         binding.contactRV.layoutManager = LinearLayoutManager(activity)
         binding.contactRV.adapter = adapter
         adapter.submitList(contactList)
-        binding.fab.setOnClickListener {
+        binding.addContact.setOnClickListener {
             findNavController().navigate(R.id.action_contactListFragment_to_addContactFragment)
         }
         return binding.root

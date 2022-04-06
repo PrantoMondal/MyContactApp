@@ -6,7 +6,7 @@
     <data>
         <variable
             name="contact"
-            type="com.example.mycontactapp.Contacts" />
+            type="com.example.mycontactapp.Contact" />
     </data>
 
 
@@ -39,7 +39,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:text="Contact Name" />
+                    tools:text="Contact Name"
+                    android:text="@{contact.name}"/>
 
                 <ImageView
                     android:id="@+id/showInfoIV"
