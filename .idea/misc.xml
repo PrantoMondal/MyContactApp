@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/Files/SEIP Android Course/MyContactApp/MyContactApp/app/src/main/res/layout/activity_main.xml" value="0.19166666666666668" />
         <entry key="..\:/Files/SEIP Android Course/MyContactApp/MyContactApp/app/src/main/res/layout/contact_row.xml" value="0.19166666666666668" />
+        <entry key="..\:/Files/SEIP Android Course/MyContactApp/MyContactApp/app/src/main/res/layout/fragment_add_contact.xml" value="0.19166666666666668" />
+        <entry key="..\:/Files/SEIP Android Course/MyContactApp/MyContactApp/app/src/main/res/layout/fragment_contact_detail.xml" value="0.19166666666666668" />
+        <entry key="..\:/Files/SEIP Android Course/MyContactApp/MyContactApp/app/src/main/res/layout/fragment_contact_list.xml" value="0.19166666666666668" />
       </map>
     </option>
   </component>

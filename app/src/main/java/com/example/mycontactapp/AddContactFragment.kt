@@ -58,7 +58,7 @@ class AddContactFragment : Fragment() {
                 address = cAddress
             )
             contactList.add(contact)
-            findNavController().navigate(R.id.action_contactListFragment_to_addContactFragment3)
+            findNavController().navigate(R.id.action_contactListFragment_to_addContactFragment)
         }
 
     }
